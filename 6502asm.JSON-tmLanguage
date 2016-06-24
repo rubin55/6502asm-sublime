@@ -1,34 +1,34 @@
 {
-    "name": "6502 asm",
+    "name": "6502 Assembler",
     "scopeName": "source.asm",
-    "fileTypes": ["asm"],
+    "fileTypes": ["asm", "s"],
     "patterns": [
- 
+
         {
             "match": "(?i)\\b(adc|and|asl|dec|dex|dey|eor|inc|inx|iny|lsr|ora|rol|ror|sbc)\\b",
             "name": "keyword.arithlogic.asm",
             "comment": "Arithmetic and logic instructions"
         },
 
-        { 
+        {
             "match": "(?i)\\b(bcc|bcs|beq|bmi|bne|bpl|bvc|bvs|jmp|jsr|rti|rts)\\b",
             "name": "keyword.branch.asm",
             "comment": "Branch instructions"
         },
 
-        { 
+        {
             "match": "(?i)\\b(bit|cmp|cpx|cpy)\\b",
             "name": "keyword.compare.asm",
             "comment": "Comparison instructions"
         },
 
-        { 
+        {
             "match": "(?i)\\b(clc|cld|cli|clv|sec|sed|sei)\\b",
             "name": "keyword.flagset.asm",
             "comment": "Flag setting instructions"
         },
 
-        { 
+        {
             "match": "(?i)\\b(lda|ldx|ldy|pha|php|pla|plp|sta|stx|sty|tax|tay|tsx|txa|txs|tya)\\b",
             "name": "keyword.transfer.asm",
             "comment": "Load, store, and transfer instructions"
@@ -56,8 +56,8 @@
             "match": "(?i)\\.([\\w|\\d]*)\\b",
             "name": "entity.name.function.asm",
             "comment": "Directives"
-        },    
-    
+        },
+
         {
             "match": "(^|\\s)\"[\\w\\s\\W]*\"",
             "name": "string.asm",

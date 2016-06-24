@@ -5,9 +5,10 @@
 	<key>fileTypes</key>
 	<array>
 		<string>asm</string>
+		<string>s</string>
 	</array>
 	<key>name</key>
-	<string>6502 asm</string>
+	<string>6502 Assembler</string>
 	<key>patterns</key>
 	<array>
 		<dict>
